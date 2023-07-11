@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Project-1</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">  
+    
+    <link rel="stylesheet" href="css/base-style.css">
+</head>
+
+<body>
+  <div class="bigbackgroundimg"></div>
+  <div class="bodycontent">
+    <nav class="navbar">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link" href="#">Discover</a>
+                  <a class="nav-link" href="#">Share</a>
+                </div>
+              </div>
+            </div>
+        </nav>
+    </nav>
+    <!-- Search Bar Menu + Background Img -->
+
+    <section class="Main-Search-Buttons-Box">
+        <div class="Main-Search-Gap1"> 
+          <h2>The Movie Database</h2> 
+          <p>Welcome to a database of millions of movies and tv shows for people to discover.</p>
+        </div>
+    </section>
+    
+    <section class="middle-search-area display-initial">
+
+      <div class="Search-button-area">
+        <form id="search-form1">
+        <div class="search">
+          <i class="fa fa-search"></i>
+          <input type="text" name="moviesearch1" placeholder="Type movie or tv show name here">
+          <button class="btn btn-primary" input id="bot1" type="submit" value="Submit">Search</button>
+        </div>
+        </form>
+      
+      </div>
+      <div id="movie-results" class="movieinfo"></div>
+
+    </section>
+    
+  </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/script.js" async defer></script>
+    
+
+    <footer class="site-footer">
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-google"></a>
+      <a href="#" class="fa fa-linkedin"></a>
+      <a href="#" class="fa fa-instagram"></a>
+      <a href="#" class="fa fa-youtube"></a>
+
+  </footer>
+
+</body>
+
+
+
+
+
+
+<!-- <div class="container-fluid">
+              <a class="navbar-brand" href="#" > <img src="images/popcorn.png" class ="gif-image" alt="mygif" class="nav-logo">Movie Ratings
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup"> -->
+
+
+<!-- Button for save -->
+    <!-- <div class ="graph-button">
+        <button type="button" class="btn btn-primary">Save</button>
+    </div>
+
+  </div> -->
+
+
+
+<!-- <label for="movie1">Search Movie:</label>
+            <input type="text" name="moviesearch1" />
+            <input id="bot1" type="submit" value="Submit" /> -->
+
+
+
+  <!-- <main class="Main-Search-Box">
+    <section class="Main-Search-Buttons-Box">
+      <div class="Main-Search-Gap1">
+        <form id="search-form1">
+          <label for="movie1">Search Movie:</label>
+          <input type="text" name="moviesearch1" />
+          <input id="bot1" type="submit" value="Submit" />
+        </form>
+      </div>
+      <section class="movie-results-container">
+        <div class ="movieinfo" id="movie-results"></div>
+      </section>
+    </section>
+  </main> -->
+
+
+    <!-- <main class="Main-Search-Box">
+      <section class="Main-Search-Buttons-Box">
+          
+        <div class="Main-Search-Gap1">
+            <form id="search-form1">
+              <label for="movie1">Search Movie:</label>
+              <input type="text" name="moviesearch1" />
+              <input id ='bot1' type="submit" value ="Submit" />
+            </form>
+            <section class="movie-results-container">
+              <ul id="movie-Results">
+          </div>
+          
+         
+      
+        </section>
+      
+  </main> -->
+
+  
+
+   <!-- <div class="Main-Search-Gap2">
+            <form id="search-form2">
+              <label for="movie2">Search Actor:</label>
+              <input type="text" name="moviesearch2" />
+              <input id = 'bot2' type="submit" />
+            </form>
+          </div> -->
+          
+          
+          <!-- <div>
+          <input id='myText' type="text">
+          <input id = 'bot'type="button" value="Click Me">
+        </div> -->
+
+
+
+
+<!-- Movie Rating Api
+
+  https://api.trakt.tv/movies/id/ratings
+
+
+  Both columns will have the movie rating of each movie
+
+  Graph button can be used to show the ratings of 1,2,3...10 on a graph
+
+ -->
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <div class="backgroundimg">
+    <div class="container text-center">
+      <form class="weather-search">
+        <label for="movie1">Movie:</label>
+        <input type="text" name="moviesearch1" />
+        <input type="submit" />
+      </form>
+      <form class="weather-search">
+        <label for="movie2">Movie:</label>
+        <input type="text" name="moviesearch2" />
+        <input type="submit" />
+      </form>
+      
+    </div>
+    <div class="container movie-information">
+      <div class="movie-information-box1">TEXT</div>
+      <div class="movie-information-box2">TEXT</div>
+    </div>
+    
+  </div>
+</div> -->
