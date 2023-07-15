@@ -15,6 +15,7 @@
     border: 2px solid #d6d4d4;
     border-radius: 10px;
     margin-top: 5rem;
+    min-width: 250px;
 
   }
   
@@ -57,7 +58,14 @@
     justify-content: space-between;
     text-align: center;
   }
+
+
   
+
+
+
+
+
   .navbar-expand-lg {
     padding: 0px;    
     background-color: rgba(0, 0, 0, 0.65);
@@ -65,6 +73,16 @@
   a{
     color: beige;
     font-family: 'Open Sans', sans-serif;
+  }
+
+  .hamburger {
+    max-width: 36px;
+    display: none;
+    overflow: hidden;
+  }
+  
+  .hamburger > img {
+    max-width: 100%;
   }
   
 
@@ -133,6 +151,56 @@ body {
     border-top: 1px solid #000;
     margin-bottom: 4px;
   }
+
+
+  /* Responsive CSS  */
+
+  @media screen and (max-width: 840px){
+
+    .navbar{
+      display: flex;
+      justify-content:left;
+      background-color: rgba(0, 0, 0, 0.65);
+      margin: 0rem 0rem 0rem 0rem;
+
+
+    }
+
+      .hamburger {
+        display: block;
+        float: left;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+/* 3 item menu when you click on the burger */
+      .navbar-nav {
+        display: none;
+        width: auto;
+        float: none;
+      }
+      
+      .showNav{
+        display: block;
+        padding: 5px;
+        /* background-color: red; */
+
+      }
+
+      .horizontal-nav a {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      }
+
+      
+      /* height: 100vh; */
+      
+    
+
+
+  }
+
+  
   
 
 /* Main Movie Card Image CSS */
@@ -140,6 +208,8 @@ body {
  .card-body{
     margin-top: 1rem;
     padding-top: 10px;
+    width: 100%;
+    max-width: 350px;
  }
 
   .card {
@@ -147,7 +217,10 @@ body {
     overflow: hidden;
     border-radius: 20px;
     max-height: 450px;
-    max-width: 350px;
+
+    width: 350px;
+
+    /* max-width: 350px; */
     box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
     text-shadow: -1px 1px 2px #000,
     1px 2px 6px #000,
@@ -238,6 +311,8 @@ body {
     width: 100%;
 }
 
+/* Display post-search */
+
 
 /* Safari CSS */
 _::-webkit-full-page-media, _:future, :root .col-md-6 {
@@ -296,3 +371,43 @@ _::-webkit-full-page-media, _:future, :root .col-md-6 {
   
 
   
+  @media screen and (min-width: 768px) and (max-width: 1080px) {
+    
+    .display-results{
+      display: grid;
+      grid-template-columns: 1fr;
+  
+    }
+
+    .col-md-6{
+      padding-top: 6rem;
+
+    }
+
+    .Main-Search-Buttons-Box {
+      padding-bottom: 1rem;
+    }
+
+
+  }
+
+
+
+  @media screen and (min-width: 400px) and (max-width: 767px) {
+     
+    .display-results{
+      display: grid;
+      grid-template-columns: 1fr;
+  
+    }
+
+    .col-md-6{
+      display: flex;
+      justify-content: center;
+      padding-top: 3rem;
+
+    }
+
+
+
+  }

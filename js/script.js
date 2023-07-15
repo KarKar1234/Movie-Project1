@@ -35,7 +35,7 @@ async function movieSearch(e) {
     document.querySelector(".middle-search-area").classList.remove("display-initial")
 
     document.querySelector(".middle-search-area").classList.add("display-results")
-   
+
 
 
 
@@ -72,3 +72,11 @@ document.querySelector("#movie-results").innerHTML = movieResults;
 
   
   document.querySelector("#search-form1").addEventListener("submit", movieSearch);
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelector(".hamburger").addEventListener("click", function () {
+      document.querySelector(".navbar-nav").classList.toggle("showNav");
+    });
+  });
+  
