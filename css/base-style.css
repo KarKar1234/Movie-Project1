@@ -160,50 +160,7 @@ body {
 
   /* Responsive CSS  */
 
-  @media screen and (max-width: 840px){
-
-    .navbar{
-      display: flex;
-      justify-content:left;
-      background-color: rgba(0, 0, 0, 0.65);
-      margin: 0rem 0rem 0rem 0rem;
-
-
-    }
-
-      .hamburger {
-        display: block;
-        float: left;
-        margin-left: 10px;
-        margin-right: 10px;
-      }
-/* 3 item menu when you click on the burger */
-      .navbar-nav {
-        display: none;
-        width: auto;
-        float: none;
-      }
-      
-      .showNav{
-        display: block;
-        padding: 5px;
-        /* background-color: red; */
-
-      }
-
-      .horizontal-nav a {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-      }
-
-      
-      /* height: 100vh; */
-      
-    
-
-
-  }
+  
 
   
   
@@ -373,6 +330,53 @@ _::-webkit-full-page-media, _:future, :root .col-md-6 {
     background: #bb0000;
     color: white;
   }
+
+
+
+  @media screen and (max-width: 840px){
+
+    .navbar{
+      display: flex;
+      justify-content:left;
+      background-color: rgba(0, 0, 0, 0.65);
+      margin: 0rem 0rem 0rem 0rem;
+
+
+    }
+
+      .hamburger {
+        display: block;
+        float: left;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+/* 3 item menu when you click on the burger */
+      .navbar-nav {
+        display: none;
+        width: auto;
+        float: none;
+      }
+      
+      .showNav{
+        display: block;
+        padding: 5px;
+        /* background-color: red; */
+
+      }
+
+      .horizontal-nav a {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      }
+
+      
+      /* height: 100vh; */
+      
+    
+
+
+  }
   
 
   
@@ -399,6 +403,40 @@ _::-webkit-full-page-media, _:future, :root .col-md-6 {
 
 
   @media screen and (min-width: 400px) and (max-width: 767px) {
+     
+    .display-results{
+      display: grid;
+      grid-template-columns: 1fr;
+      /* justify-content: center; */
+      /* align-items: center; */
+      align-content: center;
+  
+    }
+
+    .Search-button-area{
+      display: flex;
+      justify-content: center;
+    
+
+    }
+
+    .col-md-6{
+      display: flex;
+      justify-content: center;
+      padding-top: 6rem;
+
+    }
+
+    .search{
+      padding-right: 0rem;
+    }
+
+
+
+  }
+
+
+  @media screen and (max-width: 600px) {
      
     .display-results{
       display: grid;
