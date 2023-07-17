@@ -438,7 +438,7 @@ _::-webkit-full-page-media, _:future, :root .col-md-6 {
     /* Adjust search bar */
     .search {
       margin-left: 10px;
-      padding-right: 10px;
+      /* padding-right: 10px; */
     }
     
     /* Adjust input width */
