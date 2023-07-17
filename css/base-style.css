@@ -437,13 +437,21 @@ _::-webkit-full-page-media, _:future, :root .col-md-6 {
   @media screen and (max-width: 600px) {
     /* Adjust search bar */
     .search {
-      /* margin-left: 10px; */
+      margin-left: 10px;
       padding-right: 10px;
+      margin-right: 10px;
+      flex-wrap: wrap;
     }
     
     /* Adjust input width */
     .search input {
-      min-width: 150px;
+      /* min-width: 150px; */
+      flex-basis: calc(100% - 120px);
+      min-width: 0;
+    }
+
+    .search button{
+      flex-basis: 100px;
     }
   
     /* Adjust card width */
