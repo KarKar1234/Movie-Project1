@@ -448,7 +448,7 @@ _::-webkit-full-page-media, _:future, :root .col-md-6 {
   
     /* Adjust card width */
     .card {
-      width: 100%;
+      width: 90%;
       max-width: 350px;
     }
   
@@ -463,4 +463,3 @@ _::-webkit-full-page-media, _:future, :root .col-md-6 {
       padding-top: 4rem;
     }
   }
-  
