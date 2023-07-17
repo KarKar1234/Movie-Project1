@@ -399,9 +399,9 @@ _::-webkit-full-page-media, _:future, :root .col-md-6 {
 
   }
 
+  /* (min-width: 400px) and */
 
-
-  @media screen and (min-width: 400px) and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
      
     .display-results{
       display: grid;
