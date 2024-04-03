@@ -72,6 +72,7 @@ document.querySelector("#movie-results").innerHTML = movieResults;
 
   
   document.querySelector("#search-form1").addEventListener("submit", movieSearch);
+  document.querySelector("#search-form1").addEventListener("touchstart", movieSearch);
 
 
   document.addEventListener("DOMContentLoaded", function () {
