@@ -3,7 +3,7 @@ const apiKey = "cc07a8da0f01533db9bb47fa33ea6e00";
 // movie details https://api.themoviedb.org/3/movie/157336?api_key=cc07a8da0f01533db9bb47fa33ea6e00
 // movie trailer https://api.themoviedb.org/3/movie/157336/videos?api_key=cc07a8da0f01533db9bb47fa33ea6e00
 
-
+document.addEventListener("DOMContentLoaded", function () {
 async function movieSearch(e) {
     e.preventDefault();
 
@@ -69,15 +69,29 @@ document.querySelector("#movie-results").innerHTML = movieResults;
 
 
 
+document.querySelector("#search-form1").addEventListener("submit", function(e) {
+  e.preventDefault();
+  movieSearch(e);
+});
+
+document.querySelector("#bot1").addEventListener("touchstart", function(e) {
+  e.preventDefault();
+  movieSearch(e);
+});
+
 
   
-  document.querySelector("#search-form1").addEventListener("submit", movieSearch);
-  document.querySelector("#search-form1").addEventListener("touchstart", movieSearch);
+  // document.querySelector("#search-form1").addEventListener("submit", movieSearch);
+  // document.querySelector("#search-form1").addEventListener("touchstart", movieSearch);
 
 
-  document.addEventListener("DOMContentLoaded", function () {
-    document.querySelector(".hamburger").addEventListener("click", function () {
-      document.querySelector(".navbar-nav").classList.toggle("showNav");
-    });
-  });
-  
+  // document.addEventListener("DOMContentLoaded", function () {
+  //   document.querySelector(".hamburger").addEventListener("click", function () {
+  //     document.querySelector(".navbar-nav").classList.toggle("showNav");
+  //   });
+  // });
+
+
+
+
+});
