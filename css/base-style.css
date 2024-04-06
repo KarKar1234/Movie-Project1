@@ -468,3 +468,16 @@ _::-webkit-full-page-media, _:future, :root .col-md-6 {
       padding-top: 4rem;
     }
   }
+
+  @media screen and (max-width: 767px) {
+    .col-md-6 {
+      padding-top: 4rem;
+    }
+  
+    .card {
+      width: 90%;
+      max-width: 300px; /* Adjust the maximum width as per your preference */
+      margin: auto; /* Center the card horizontally */
+      margin-top: 2rem; /* Add some top margin for better spacing */
+    }
+  }
